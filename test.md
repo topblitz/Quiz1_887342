@@ -1,7 +1,5 @@
 # Quiz1_887342
 
-# Quiz1_887342
-
 US_states = 
 
 	{"Alabama" => "AL",
@@ -79,7 +77,21 @@ US_states =
   end
   end
    
+  US_states.each do | key, value|
+	if (key[0] == "A"|| key[0] =="E"|| key[0] =="I"|| key[0] =="O"|| key[0] =="U") &&  
+	    (key[key.length-1] == "a"||key[key.length-1] =="e"||key[key.length-1] =="i"||key[key.length-1] =="o"||key[key.length-1] =="u" )  
+  puts  key
   
- 
+    
+  end
+  end
   
-  ***** เหตุผลที่ยังไม่ทำข้อ2  ยังศึกษาโค้ดไม่พอครับ****
+   
+   require 'prime'
+num = gets.chomp
+n = 1
+Prime.each(num.to_i) do |prime|
+    print "p#{n} -> #{prime}, "
+    n += 1
+end
+  
